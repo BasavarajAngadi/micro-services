@@ -16,7 +16,7 @@ public class ProductController {
 	public ProductInfo getAllProductDetails() {
 		System.out.println("contact name:"+appConfiguration.getName());
 		System.out.println("contact name:"+appConfiguration.getEmail());
-		return new ProductInfo("Mobile", 22, "Electronic");
+		return new ProductInfo("Mobile", 22, "Electronic",appConfiguration.getName(),appConfiguration.getEmail());
 
 	}
 

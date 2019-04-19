@@ -3,17 +3,40 @@ package com.braj.productservice.entity;
 public class ProductInfo {
 
 	private String name;
-	private Integer price;
+    private Integer price;
 	private String type;
-	public ProductInfo(String name, Integer price, String type) {
+	private String productOwnerName;
+	private String productEmailAddress;
+
+	public ProductInfo(String name, Integer price, String type,
+			String productOwnerName, String productEmailAddress) {
 		super();
 		this.name = name;
 		this.price = price;
 		this.type = type;
+		this.productOwnerName = productOwnerName;
+		this.productEmailAddress = productEmailAddress;
 	}
 
-	
-	protected  ProductInfo(){}
+	public String getProductOwnerName() {
+		return productOwnerName;
+	}
+
+	public void setProductOwnerName(String productOwnerName) {
+		this.productOwnerName = productOwnerName;
+	}
+
+	public String getProductEmailAddress() {
+		return productEmailAddress;
+	}
+
+	public void setProductEmailAddress(String productEmailAddress) {
+		this.productEmailAddress = productEmailAddress;
+	}
+
+	protected ProductInfo() {
+	}
+
 	public Integer getPrice() {
 		return price;
 	}
